@@ -14,11 +14,11 @@ export default function Clicker() {
     <div id="app">
       <span id="count-container">
         <h1>Clicks: </h1>
-        <h1 id="clicker-count">{clicks}</h1>
+        <h1 id="clicker-count">{clicks.toLocaleString()}</h1>
       </span>
       <span id="multi-container">
         <h2>Multiplier: </h2>
-        <h2 id="multi-count">+{countMulti}</h2>
+        <h2 id="multi-count">+{countMulti.toLocaleString()}</h2>
       </span>
       <button id="clicker-button" onClick={handleClick}>Click Here!</button>
     </div>
