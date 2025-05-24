@@ -44,9 +44,9 @@ function Menu() {
                     <button id="upgrade-button" onClick={() => buyItem(3, 1000)} disabled={clicks < 1000}>Upgrade 3 | Cost: 1000</button>
                 </span>
                 <span id="menu-container">
-                    <button id="upgrade-button" onClick={() => buyItem(4, 10000)} disabled={clicks < 10000}>Upgrade 1 | Cost: 10000</button>
-                    <button id="upgrade-button" onClick={() => buyItem(5, 50000)} disabled={clicks < 50000}>Upgrade 2 | Cost: 50000</button>
-                    <button id="upgrade-button" onClick={() => buyItem(6, 100000)} disabled={clicks < 100000}>Upgrade 3 | Cost: 100000</button>
+                    <button id="upgrade-button" onClick={() => buyItem(4, 10000)} disabled={clicks < 10000}>Upgrade 4 | Cost: 10000</button>
+                    <button id="upgrade-button" onClick={() => buyItem(5, 50000)} disabled={clicks < 50000}>Upgrade 5 | Cost: 50000</button>
+                    <button id="upgrade-button" onClick={() => buyItem(6, 100000)} disabled={clicks < 100000}>Upgrade 6 | Cost: 100000</button>
                 </span>
               </div>
             )}
