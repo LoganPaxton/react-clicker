@@ -5,6 +5,13 @@ html, body {
   text-align: center;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
 #clicker-count {
   color: #3838ff;
   text-decoration: none;
@@ -12,15 +19,18 @@ html, body {
 }
 
 #count-container {
+  margin-top: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 #multi-container {
+  margin-top: 5px;
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-bottom: 10px;
   border-bottom: 2px solid white;
   gap: 5px;
   margin-bottom: 20px;
@@ -108,4 +118,28 @@ html, body {
 #clicker-button:hover {
   width: 210px;
   height: 60px;
+}
+
+#NavBar {
+  background-color: #111111;
+  height: 50px;
+
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  align-items: center;
+}
+
+#link {
+  color: white;
+  text-decoration: underline;
+  font-size: 21px;
+}
+
+#upgrade-list {
+  margin-top: 20px;
+}
+
+li {
+  margin-top: 5px;
 }

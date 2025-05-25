@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { useClick } from './ClickContext.jsx'
+import { useClick } from './contexts/ClickContext.jsx'
 
 function Codes() {
   const { clicks, setClicks } = useClick();

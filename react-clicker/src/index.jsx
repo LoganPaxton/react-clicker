@@ -1,20 +1,18 @@
 import { createRoot } from 'react-dom/client'
-import { ClickProvider } from './ClickContext.jsx'
-import Clicker from '/src/Clicker.jsx'
-import Codes from './Codes.jsx'
-import Menu from './Menu.jsx'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import NotFound from './pages/NotFound.jsx'
+import Main from './pages/Main.jsx'
+import Upgrades from './pages/Upgrades.jsx'
 import './App.css'
-import { ContextHandler } from './ContextHandler.jsx'
 
 const root = createRoot(document.getElementById("root"))
 
 root.render(
-  <main>
-    <ContextHandler>
-      <Clicker />
-      <Codes />
-      <Menu />
-    </ContextHandler>
-  </main>
+  <Router>
+    <Routes>
+      <Route path="/" element={<Main />} />
+      <Route path="/upgrades" element={<Upgrades />} />
+      <Route path="*" element={<NotFound />} />
+    </Routes>
+  </Router>
 )
-

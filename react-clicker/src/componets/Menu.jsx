@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
-import { useClick } from './ClickContext.jsx'
-import { useCountMulti } from './UpgradeContext';
+import { useClick } from '../componets/contexts/ClickContext.jsx'
+import { useCountMulti } from '../componets//contexts/UpgradeContext.jsx';
 
 function Menu() {
     const [ showMenu, setShowMenu ] = useState(false);

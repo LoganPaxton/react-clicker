@@ -1,5 +1,5 @@
-import { useClick } from './ClickContext';
-import { useCountMulti } from './UpgradeContext';
+import { useClick } from './contexts/ClickContext';
+import { useCountMulti } from './contexts/UpgradeContext';
 
 export default function Clicker() {
   const { clicks, setClicks } = useClick();
